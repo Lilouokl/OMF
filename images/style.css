@@ -86,6 +86,10 @@ body {
         justify-content: space-evenly;
     }
 
+    .function-steps :active {
+        background-color: #9356DC;;
+    }
+
     .function-title {
         font-weight: 700;
         font-size: 24px;
@@ -128,10 +132,11 @@ body {
     }
 
     .cards {
-        display: grid;
+        display: flex;
         width: 100%;
         gap: 15px;
         margin-bottom: 65px;
+        flex-direction: column;
     }
     
     
@@ -156,7 +161,10 @@ body {
     .card-bottom {
         color: black;
         padding: 13px;
+        position: relative;
+        display: flex;
     }
+    
 
     .card-title {
         margin: 0;
@@ -179,6 +187,17 @@ body {
         font-weight: 500;
         right: 25px;
         top: 20px;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+
+    .card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 21px;
     }
 
     i.fa-solid.fa-heart {
