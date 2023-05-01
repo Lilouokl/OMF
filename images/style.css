@@ -241,3 +241,63 @@ body {
         font-weight: 500;
         line-height: 19px;
     }
+
+
+    /* Style menu restaurant */
+
+.header-logo {
+    font-family: 'Shrikhand'
+}
+
+img.restaurant-img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-container-restaurant {
+    background-color: #f7f7f7;
+    border-radius: 40px 40px 0 0
+}
+
+.menu-header-restaurant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 17px 0 17px;
+}
+
+.submenus {
+    display: grid;
+}
+
+.submenu {
+    max-width: 100%;
+}
+
+.submenu-title {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.menuItem {
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+}
+
+.menuItem-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wrapbtn {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px 0;
+}
