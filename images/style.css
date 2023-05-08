@@ -125,7 +125,7 @@ body {
 }
 
     .container {
-        max-width: 1280px;
+        max-width: 1440px;
     }
 
     .restaurants-title {
@@ -200,14 +200,24 @@ body {
         height: 21px;
     }
 
+    .card-btn:hover .fa-regular {
+        opacity: 0;
+    }
+
+    .card-btn:hover .fa-solid {
+        opacity: 1;
+    }
+
     i.fa-solid.fa-heart {
         position: absolute;
-        
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        color: Line;
     }
 
     i.fa-regular.fa-heart {
         position: absolute;
-        
+        transition: all 0.3s ease-in-out;
     }
 
 .footer {
@@ -348,4 +358,53 @@ img.restaurant-img {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
     padding: 13px 20px;
+}
+
+
+/* Media Queries- FORMAT DESKTOP */
+
+@media (min-width :1024px) {
+
+    .function {
+        padding: 50px 180px;
+    }
+
+        .function-steps {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .function-step {
+            width: 100%;
+        }
+
+
+
+.restaurants {
+    padding: 30px 180px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+
+
+.footer .container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 30px 25px;
+}
+
+    .footer-list {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: flex;
+    }
+
 }
