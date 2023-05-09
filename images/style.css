@@ -217,13 +217,22 @@ body {
     i.fa-solid.fa-heart {
         position: absolute;
         opacity: 0;
-        transition: all 0.3s ease-in-out;
-        color: Line;
+        transition: 1.5s;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        -webkit-background-clip: text;
+        background-clip: standard;
     }
 
+    i.fa-solid.fa-heart:hover {
+        opacity: 1;
+        transition: 0.5s;
+
+    }
+    
     i.fa-regular.fa-heart {
-        position: absolute;
-        transition: all 0.3s ease-in-out;
+        transition: 1.5s;
+        opacity: 1;
     }
 
 .footer {
