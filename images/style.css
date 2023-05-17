@@ -1,3 +1,13 @@
+@keyframes itemAppear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
 body {
     margin: 0;
     font-family: "roboto", sans-serif;
@@ -360,6 +370,9 @@ button.menu-btn {
     font-weight: 300;
     font-size: 16px;
     margin-left: 13px;
+    border-bottom: 3px solid #99E2D7;
+    width: 80px;
+    padding-bottom: 5px;
 }
 
 
@@ -374,6 +387,12 @@ button.menu-btn {
     margin: 15px 0;
     margin-bottom: 24px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(0);
+    max-width: 100%;
+    animation: itemAppear 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 
 }
 
@@ -384,8 +403,8 @@ button.menu-btn {
 }
 
 .menuItem-wrapIcon {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 25px;
+    width: 25px;
     background-color: white;
     display: flex;
     align-items: center;
