@@ -343,8 +343,11 @@ button.menu-btn {
     background-color: black;
 }
 
+.menu-btn:hover::before {
+    opacity: 1;
+}
 
-.menu-btn:hover{
+.menu-btn::before{
     opacity: 0;
     transition: 0.5s;
     content: "";
@@ -355,6 +358,29 @@ button.menu-btn {
     width: 100%;
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
+
+.Menu-like-nobg {
+    opacity: 0;
+    transition-duration: 0.25s;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+
+.Menu-like-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
 
 .submenus {
     display: flex;
@@ -396,12 +422,29 @@ button.menu-btn {
 
 }
 
+.menuItem:hover .menuItem-validation {
+    margin-right: -20px;
+    width: 59px;
+    height: 100px;
+}
+
 .menuItem-title {
     font-weight: 500;
     font-size: 18px;
     margin: 0;
 }
 
+.menuItem-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.menuItem-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .menuItem-wrapIcon {
     height: 25px;
     width: 25px;
@@ -429,10 +472,17 @@ button.menu-btn {
     margin: 0;
 }
 
+.menuItem-price {
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+}
+
 .menuItem-validation {
     background-color: #99E2D0;
     margin: -16px -80px -16px 16px;
     width: 64px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
