@@ -16,6 +16,7 @@
     100% {
         opacity: 0;
         z-index: 0;
+        visibility: hidden;
     }
 } 
 
@@ -261,9 +262,7 @@ body {
         background: none;
     }
 
-    i.fa-heart {
-        background-color: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-    }
+    
 
     .card-btn:hover .fa-regular {
         opacity: 0;
@@ -280,7 +279,9 @@ body {
         -webkit-text-fill-color: transparent;
         background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
         -webkit-background-clip: text;
-        background-clip: standard ;
+        background-clip: text;
+        
+        
     }
 
     i.fa-solid.fa-heart:hover {
